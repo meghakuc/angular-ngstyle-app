@@ -1,0 +1,8 @@
+<h1 class ="title">{{title}}</h1>
+<div class="container">
+  <div *ngFor="let celeb of actors">
+     <p [ngStyle]="{'background-color':celeb.status === 'Dead' ? 'red' : 'green' }">
+    {{ celeb.artist }} is {{celeb.status}}
+     </p>
+   </div>
+</div>
